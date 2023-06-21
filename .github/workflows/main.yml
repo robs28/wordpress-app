@@ -2,7 +2,7 @@ name: Build, Push, and Deploy - DEV Env
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   docker_build_push:
