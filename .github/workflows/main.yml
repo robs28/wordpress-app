@@ -27,7 +27,7 @@ jobs:
         id: short-sha
         run: echo "sha=${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
 
-        name: Build and Push 
+      - name: Build and Push 
         uses: docker/build-push-action@v4
         with:
           context: "{{defaultContext}}:mysubdir"
